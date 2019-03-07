@@ -2,8 +2,10 @@
     padding: 0;
     margin: 0;
 }
-.nav{
+
+.navbar{
     height: 64px;
+    width: 100%;
 }
 .row.no-gutters {
     margin-right: 0;
@@ -24,6 +26,24 @@
 .side-inro{
     height: 666px;
     background-color: #333;
+}
+.intro-content{
+    position: relative;
+    margin-left: 10%;
+    top: 20%;
+}
+.intro-content h1{
+    color: white;
+    font-size: 96px;
+    font-weight: bold;
+}
+.intro-content p{
+    color: white;
+    font-size: 27px;
+    opacity: 0.7;
+}
+.intro-content h1 span{
+    letter-spacing: 20px;
 }
 .background-image{
     width: 52%;
@@ -103,6 +123,123 @@
     cursor: pointer;
 }
 .photo-area{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: none; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.container-block{
+    width: 80%;
+    height: 80vh;
+    margin-left: 10%;
+    margin-top: 10vh;
+    background-color: black;
+
+}
+.portfolio-images{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
+}
+.partition-contact{
+    margin-top: 100px;
+}
+.form{
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    margin-left: 20%;
+    margin-top: 80%;
+    transform: translateY(-50%);
+    border-right: solid #777 1px;
+}
+.form li{
+    width: 80%;
+    font-size: 24px;
+    overflow: hidden;
+    margin-top: 50px;
+    background: transparent;
+    box-shadow: 0 4px 4px 0 rgba(170, 170, 170, 0.25);
+}
+:focus{outline: none;}
+.input{
+    width: 100%;
+    border: 0;
+    padding: 7px 0; 
+    border-bottom: 4px solid #aaa;
+    
+}
+.input:focus{
+    border-bottom: 4px solid #f2b618;
+}
+.form~li:focus{
+    box-shadow: 0 4px 4px 0 rgba(58, 4, 255, 0.7);
+}
+input[type="submit"]{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    width: 80%;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #4ee9d6;
+    border: none;
+}
+.guitar-guy{
+    width: 40%;
+    object-fit: cover;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+.bottom{
+    width: 1440px;
+    height: 784px;
+    background-image: linear-gradient(to top, #3d4ea1, #67d1e9 );
+}
+.cat-image{
+    position: relative;
+    width: 500px;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 4px solid white;
+}
+.profile-image{
+    position: absolute;
+    bottom: 0;
+    left: -80%;
+    height: 90%;
+    object-fit: cover;
+}
+.about-content{
+    position: relative;
+    width: 50%;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+.about-content h1{
+    font-size: 48px;
+}
+.red-block{
+    height: 8px;
+    width: 56px;
+    background-color: red;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
